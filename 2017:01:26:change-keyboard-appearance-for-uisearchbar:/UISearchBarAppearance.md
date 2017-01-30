@@ -44,6 +44,8 @@ extension ViewController: UISearchBarDelegate {
 
 Run following command.
 
-`svn checkout https://github.com/sag333ar/sagarrkothari.com.git/trunk/2017\:01\:26\:change-keyboard-appearance-for-uisearchbar\:`
+```
+svn checkout https://github.com/sag333ar/sagarrkothari.com.git/trunk/2017\:01\:26\:change-keyboard-appearance-for-uisearchbar\:
+```
 
 Cheers
