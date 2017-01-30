@@ -4,7 +4,7 @@ Just paste following code snip & call function
 
 ### Objective-C code
 
-```
+```objective-c
 + (void)changeSearchBarColor:(UISearchBar *)searchBar {
    for (UIView *subview in searchBar.subviews) {
        for (UIView *subSubview in subview.subviews) {
@@ -20,7 +20,7 @@ Just paste following code snip & call function
 
 ### Swift code
 
-```
+```swift
 extension ViewController: UISearchBarDelegate {
 
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
