@@ -37,3 +37,9 @@ svn checkout https://github.com/sag333ar/sagarrkothari.com.git/trunk/2017:\02:\0
 ```
 svn checkout https://github.com/sag333ar/sagarrkothari.com.git/trunk/2017\:02\:02\:take-a-screenshot-of-uiview-code-snippet\:
 ```
+
+### [Code snippet for rotate or flip UIImage object – iOS Swift](sagarrkothari.com/2017/02/02/code-snippet-for-rotate-or-flip-uiimage-object-ios-swift/)
+
+```
+svn checkout https://github.com/sag333ar/sagarrkothari.com.git/trunk/2017\:02\:02\:Code-snippet-for-rotate-or-flip-UIImage-object-iOS-Swift:\
+```
