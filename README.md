@@ -43,3 +43,7 @@ svn checkout https://github.com/sag333ar/sagarrkothari.com.git/trunk/2017\:02\:0
 ```
 svn checkout https://github.com/sag333ar/sagarrkothari.com.git/trunk/2017\:02\:02\:Code-snippet-for-rotate-or-flip-UIImage-object-iOS-Swift:\
 ```
+
+### [Disable App Transport Security or allow http requests](http://sagarrkothari.com/2017/02/02/disable-app-transport-security-or-allow-http-requests/)
+
+Follow the steps given in the article. No sample code for this.

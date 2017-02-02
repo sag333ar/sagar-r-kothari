@@ -4,7 +4,7 @@ Open your project.
 
 ### Step 2.
 
-Open Info.plist as source code (right click) of your project.
+Open `Info.plist` as source code (right click on `Info.plist`).
 
 ### Step 3.
 
