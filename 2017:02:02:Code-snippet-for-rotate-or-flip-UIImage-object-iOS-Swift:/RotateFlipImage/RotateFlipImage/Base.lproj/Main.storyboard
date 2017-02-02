@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RotateFlipImage" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SagarRKothari" translatesAutoresizingMaskIntoConstraints="NO" id="GLF-CG-sFd">
+                                <rect key="frame" x="16" y="28" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="6SG-q9-hb6"/>
+                                    <constraint firstAttribute="width" constant="200" id="jLX-OX-CoX"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eHb-Cz-Hwk">
+                                <rect key="frame" x="16" y="236" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="qoK-ad-afs"/>
+                                    <constraint firstAttribute="width" constant="100" id="wCF-Ll-FgI"/>
+                                </constraints>
+                                <state key="normal" title="Rotate90"/>
+                                <connections>
+                                    <action selector="btnRotateTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="11u-Jp-Uut"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="851-Uv-LLN">
+                                <rect key="frame" x="124" y="236" width="92" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="WFL-8E-XxZ"/>
+                                    <constraint firstAttribute="width" constant="92" id="hDw-SV-gRe"/>
+                                </constraints>
+                                <state key="normal" title="FlipH"/>
+                                <connections>
+                                    <action selector="btnFlipTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D4r-1J-xM8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GLF-CG-sFd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="1eL-jM-fCv"/>
+                            <constraint firstItem="eHb-Cz-Hwk" firstAttribute="top" secondItem="GLF-CG-sFd" secondAttribute="bottom" constant="8" id="L01-tu-dl3"/>
+                            <constraint firstItem="851-Uv-LLN" firstAttribute="leading" secondItem="eHb-Cz-Hwk" secondAttribute="trailing" constant="8" id="NBQ-pb-5sg"/>
+                            <constraint firstItem="851-Uv-LLN" firstAttribute="top" secondItem="GLF-CG-sFd" secondAttribute="bottom" constant="8" id="evB-05-RcL"/>
+                            <constraint firstItem="GLF-CG-sFd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="rF4-Tc-IIQ"/>
+                            <constraint firstItem="eHb-Cz-Hwk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="xsJ-RA-5ke"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgV" destination="GLF-CG-sFd" id="5YZ-GD-sg5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="SagarRKothari" width="250" height="250"/>
+    </resources>
+</document>
