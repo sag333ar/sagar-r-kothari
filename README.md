@@ -1,5 +1,6 @@
 # sagarrkothari.com
-Sample iOS projects of http://sagarrkothari.com
+
+Sample iOS projects of [http://sagarrkothari.com](http://sagarrkothari.com)
 
 ### [Change Keyboard appearance for `UISearchBar`](http://sagarrkothari.com/2017/01/26/change-keyboard-appearance-for-uisearchbar/)
 
@@ -23,4 +24,10 @@ svn checkout https://github.com/sag333ar/sagarrkothari.com.git/trunk/2017\:01\:3
 
 ```
 svn checkout https://github.com/sag333ar/sagarrkothari.com.git/trunk/2017\:02\:02\:play-a-video-inside-a-uiview\:
+```
+
+### [Code Snippet for resizing an UIImage](http://sagarrkothari.com/2017/02/02/code-snippet-for-resizing-an-uiimage/)
+
+```
+svn checkout https://github.com/sag333ar/sagarrkothari.com.git/trunk/2017:\02:\02:\code-snippet-for-Resizing-an-uiimage:\
 ```
