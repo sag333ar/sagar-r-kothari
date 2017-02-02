@@ -31,3 +31,9 @@ svn checkout https://github.com/sag333ar/sagarrkothari.com.git/trunk/2017\:02\:0
 ```
 svn checkout https://github.com/sag333ar/sagarrkothari.com.git/trunk/2017:\02:\02:\code-snippet-for-Resizing-an-uiimage:\
 ```
+
+### (Take a screenshot of a UIView – code snippet)[sagarrkothari.com/2017/02/02/take-a-screenshot-of-a-uiview-code-snippet/]
+
+```
+svn checkout https://github.com/sag333ar/sagarrkothari.com.git/trunk/2017\:02\:02\:take-a-screenshot-of-uiview-code-snippet\:
+```
