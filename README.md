@@ -47,3 +47,9 @@ svn checkout https://github.com/sag333ar/sagarrkothari.com.git/trunk/2017\:02\:0
 ### [Disable App Transport Security or allow http requests](http://sagarrkothari.com/2017/02/02/disable-app-transport-security-or-allow-http-requests/)
 
 Follow the steps given in the article. No sample code for this.
+
+### [Enable navigation to an iOS application using URL Scheme](sagarrkothari.com/2017/02/07/enable-navigation-to-an-ios-application-using-url-scheme/)
+
+Follow the steps given in the article. No sample code for this.
+
+### [Code snippet for registering for push notification on iOS 10 or below](http://sagarrkothari.com/2017/02/07/code-snippet-for-registering-for-push-notification-on-ios-10-or-below/)
