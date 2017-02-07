@@ -53,3 +53,9 @@ Follow the steps given in the article. No sample code for this.
 Follow the steps given in the article. No sample code for this.
 
 ### [Code snippet for registering for push notification on iOS 10 or below](http://sagarrkothari.com/2017/02/07/code-snippet-for-registering-for-push-notification-on-ios-10-or-below/)
+
+Follow the steps given in the article. No sample code for this.
+
+### [Code snippet for base64 Data to String and String to Data Conversion in Objective-C](http://sagarrkothari.com/2017/02/07/code-snippet-for-base64-data-to-string-and-string-to-data-conversion-in-objective-c/)
+
+Follow the steps given in the article. No sample code for this.
