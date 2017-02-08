@@ -84,6 +84,18 @@ Use code snippet given in the article.
 
 Use code snippet given in the article.
 
-### [Code snippet for integrating reachability in Swift XCode project]()
+### [Code snippet for integrating reachability in Swift XCode project](http://sagarrkothari.com/2017/02/08/code-snippet-for-integrating-reachability-in-swift-xcode-project/)
+
+Use code snippet given in the article.
+
+### [Swift3 - example for Lazy propertise, computed properties and tuples]()
+
+Use code snippet given in the article.
+
+### [Code snippet for dialing phone number through code in iOS Swift]()
+
+Use code snippet given in the article.
+
+### [Code snippet for opening email composer]()
 
 Use code snippet given in the article.
