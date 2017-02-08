@@ -88,14 +88,14 @@ Use code snippet given in the article.
 
 Use code snippet given in the article.
 
-### [Swift3 - example for Lazy propertise, computed properties and tuples]()
+### [Swift3 - example for Lazy propertise, computed properties and tuples](http://sagarrkothari.com/2017/02/08/swift3-example-for-lazy-properties-computed-properties-and-tuples/)
 
 Use code snippet given in the article.
 
-### [Code snippet for dialing phone number through code in iOS Swift]()
+### [Code snippet for dialing phone number through code in iOS Swift](http://sagarrkothari.com/2017/02/08/code-snippet-for-dialing-phone-number-through-code-in-ios-swift/)
 
 Use code snippet given in the article.
 
-### [Code snippet for opening email composer]()
+### [Code snippet for opening email composer](http://sagarrkothari.com/2017/02/08/code-snippet-for-opening-email-composer/)
 
 Use code snippet given in the article.
