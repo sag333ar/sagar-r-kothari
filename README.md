@@ -99,3 +99,9 @@ Use code snippet given in the article.
 ### [Code snippet for opening email composer](http://sagarrkothari.com/2017/02/08/code-snippet-for-opening-email-composer/)
 
 Use code snippet given in the article.
+
+### [Core Data implementation guide for iOS10 and Swift3]()
+
+```
+svn checkout https://github.com/sag333ar/sagarrkothari.com.git/trunk/CoreDataGuide
+```
