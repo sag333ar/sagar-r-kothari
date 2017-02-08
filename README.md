@@ -72,14 +72,18 @@ Use code snippet given in the article.
 
 Use code snippet given in the article.
 
-### [Code snippet for Formatting an XML String Pretty Print]()
+### [Code snippet for Formatting an XML String Pretty Print](http://sagarrkothari.com/2017/02/08/code-snippet-for-formatting-an-xml-string-pretty-print/)
 
 Use code snippet given in the article.
 
-### [Code snippet for Validating an email]()
+### [Code snippet for Validating an email](http://sagarrkothari.com/2017/02/08/code-snippet-for-validating-an-email/)
 
 Use code snippet given in the article.
 
-### [Code snippet for Generating URL using scheme, host, path, parameters and path extension]()
+### [Code snippet for Generating URL using scheme, host, path, parameters and path extension](http://sagarrkothari.com/2017/02/08/77/)
+
+Use code snippet given in the article.
+
+### [Code snippet for integrating reachability in Swift XCode project]()
 
 Use code snippet given in the article.
