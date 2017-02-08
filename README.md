@@ -59,3 +59,15 @@ Follow the steps given in the article. No sample code for this.
 ### [Code snippet for base64 Data to String and String to Data Conversion in Objective-C](http://sagarrkothari.com/2017/02/07/code-snippet-for-base64-data-to-string-and-string-to-data-conversion-in-objective-c/)
 
 Follow the steps given in the article. No sample code for this.
+
+### [Code snippet for converting recent date-time to meaningful and readable format](http://sagarrkothari.com/2017/02/07/code-snippet-for-converting-recent-date-time-to-meaningful-and-readable-format/)
+
+Use code snippet given in the article.
+
+### [Code snippet for converting UnixTimeStamp Date with specified Timezone]()
+
+Use code snippet given in the article.
+
+### [Code snippet for converting Format a JSON String Pretty Print]()
+
+Use code snippet given in the article.
