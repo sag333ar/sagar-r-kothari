@@ -100,8 +100,12 @@ Use code snippet given in the article.
 
 Use code snippet given in the article.
 
-### [Core Data implementation guide for iOS10 and Swift3]()
+### [Core Data implementation guide for iOS10 and Swift3](http://sagarrkothari.com/2017/02/08/core-data-implementation-guide-for-ios10-and-swift3/)
 
 ```
 svn checkout https://github.com/sag333ar/sagarrkothari.com.git/trunk/CoreDataGuide
 ```
+
+### [Custom class for getting iOS Device Location Swift XCode]()
+
+Use code snippet given in the article.
