@@ -64,10 +64,22 @@ Follow the steps given in the article. No sample code for this.
 
 Use code snippet given in the article.
 
-### [Code snippet for converting UnixTimeStamp Date with specified Timezone]()
+### [Code snippet for converting UnixTimeStamp Date with specified Timezone](http://sagarrkothari.com/2017/02/08/code-snippet-for-converting-unixtimestamp-date-with-specified-timezone/)
 
 Use code snippet given in the article.
 
-### [Code snippet for converting Format a JSON String Pretty Print]()
+### [Code snippet for converting Format a JSON String Pretty Print](http://sagarrkothari.com/2017/02/08/code-snippet-for-formating-a-json-string-pretty-print/)
+
+Use code snippet given in the article.
+
+### [Code snippet for Formatting an XML String Pretty Print]()
+
+Use code snippet given in the article.
+
+### [Code snippet for Validating an email]()
+
+Use code snippet given in the article.
+
+### [Code snippet for Generating URL using scheme, host, path, parameters and path extension]()
 
 Use code snippet given in the article.
