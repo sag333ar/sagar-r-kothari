@@ -110,6 +110,10 @@ svn checkout https://github.com/sag333ar/sagarrkothari.com.git/trunk/CoreDataGui
 
 Use code snippet given in the article.
 
-### [Code snippet for reverse geocoding]()
+### [Code snippet for reverse geocoding](http://sagarrkothari.com/2017/02/20/code-snippet-for-reverse-geo-coding-in-ios/)
+
+Use code snippet given in the article.
+
+### [Code snippet for local authentication or biometric authorization]()
 
 Use code snippet given in the article.
