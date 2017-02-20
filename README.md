@@ -106,6 +106,10 @@ Use code snippet given in the article.
 svn checkout https://github.com/sag333ar/sagarrkothari.com.git/trunk/CoreDataGuide
 ```
 
-### [Custom class for getting iOS Device Location Swift XCode]()
+### [Custom class for getting iOS Device Location Swift XCode](http://sagarrkothari.com/2017/02/08/custom-class-for-getting-ios-device-location-swift-xcode/)
+
+Use code snippet given in the article.
+
+### [Code snippet for reverse geocoding]()
 
 Use code snippet given in the article.
