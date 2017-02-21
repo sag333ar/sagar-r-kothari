@@ -118,6 +118,10 @@ Use code snippet given in the article.
 
 Use code snippet given in the article.
 
-### [Tailor tool install and usage guide for swift code lint]()
+### [Tailor tool install and usage guide for swift code lint](http://sagarrkothari.com/2017/02/21/tailor-tool-install-and-usage-guide-for-swift-code-lint/)
+
+Go through article to understand guidelines.
+
+### [SwiftLint tool install and usage guide for swift code lint]()
 
 Go through article to understand guidelines.
