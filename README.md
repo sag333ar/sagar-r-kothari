@@ -114,6 +114,10 @@ Use code snippet given in the article.
 
 Use code snippet given in the article.
 
-### [Code snippet for local authentication or biometric authorization]()
+### [Code snippet for local authentication or biometric authorization](http://sagarrkothari.com/2017/02/20/code-snippet-for-local-authentication-or-bio-metric-authorization/)
 
 Use code snippet given in the article.
+
+### [Tailor tool install and usage guide for swift code lint]()
+
+Go through article to understand guidelines.
