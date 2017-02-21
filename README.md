@@ -122,6 +122,10 @@ Use code snippet given in the article.
 
 Go through article to understand guidelines.
 
-### [SwiftLint tool install and usage guide for swift code lint]()
+### [SwiftLint tool install and usage guide for swift code lint](http://sagarrkothari.com/2017/02/21/swiftlint-tool-install-and-usage-guide-for-swift-code-lint/)
 
 Go through article to understand guidelines.
+
+### [Sample Fastlane script for continuous integration for iOS Apps]()
+
+Use code snippet given in the article.

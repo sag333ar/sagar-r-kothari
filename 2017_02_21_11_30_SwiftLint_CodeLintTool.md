@@ -51,3 +51,9 @@ excluded:
 ```sh
 swiftlint autocorrect
 ```
+
+### More info
+
+* [Github](https://github.com/realm/SwiftLint)
+
+![Sample Image](https://github.com/realm/SwiftLint/raw/master/assets/screenshot.png)
