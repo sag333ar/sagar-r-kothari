@@ -1,6 +1,6 @@
 Insert following piece of code to create a basic http server with node.js
 
-```nodejs
+```js
 // File name = server.js
 var http = require("http");
 
@@ -14,6 +14,6 @@ server.listen(8080);
 
 To start server, run following command.
 
-```
+```sh
 node server.js
 ```
