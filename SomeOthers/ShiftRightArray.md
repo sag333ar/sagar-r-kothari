@@ -11,3 +11,9 @@ public func solution(_ A: [Int], _ K : Int) -> [Int] {
 }
 print(solution([3, 8, 9, 7, 6], 3))
 ```
+
+For given input Array A = [3, 8, 9, 7, 6] & shift right K = 3,
+Output is as follows
+```
+[9, 7, 6, 3, 8]
+```
