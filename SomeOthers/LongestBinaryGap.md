@@ -1,7 +1,7 @@
 ```swift
-// Longest binary gap
-public func solution(_ N: Int) -> Int {
-    // Take temporary variable. This will be used to generate binary number from Int
+// A function which will generate Binary value in form of string from given number
+public func getBinaryString(_ N: Int) -> String {
+	// Take temporary variable. This will be used to generate binary number from Int
     var n = N
     // This string variable will be holding actual binary value of given number
     var string = ""
@@ -11,7 +11,11 @@ public func solution(_ N: Int) -> Int {
         string = "\(remainder)\(string)"
         n = n / 2
     }
-    // Take an array which will hold gap-values
+}
+
+// A function which will process binary given in form of String and returns an array of gaps
+public func getArrayOfGaps(_ string: String) -> [Int]{
+	// Take an array which will hold gap-values
     var arrayOfZeroCounts: [Int] = []
     // A temporary variable which will count the length of gap
     var count = 0
@@ -30,15 +34,30 @@ public func solution(_ N: Int) -> Int {
             count = count + 1
         }
     }
-    // find maximum gap length from array
+    return arrayOfZeroCounts
+}
+
+// A function which will find the maximum value from given array
+public func getMax(_ fromArray: [Int]) -> Int {
+	// find maximum from array
     var max = 0
-    for value in arrayOfZeroCounts {
+    for value in fromArray {
         if value > max {
             max = value
         }
     }
-    // return max gap length
+    // return max
     return max
+}
+
+// Longest binary gap
+public func solution(_ N: Int) -> Int {
+	// get binary value from given number
+    let string = getBinaryString(N)
+    // Take an array which will hold gap-values
+    let arrayOfZeroCounts: [Int] = getArrayOfGaps(string)
+    // return maximum value
+    return getMax(arrayOfZeroCounts)
 }
 // A test data
 print(solution(529))
