@@ -11,6 +11,7 @@ public func getBinaryString(_ N: Int) -> String {
         string = "\(remainder)\(string)"
         n = n / 2
     }
+    return string
 }
 
 // A function which will process binary given in form of String and returns an array of gaps
