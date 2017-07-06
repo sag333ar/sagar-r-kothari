@@ -1,4 +1,18 @@
+#### Following solution works for both performance and correctness
+
+```swift
+  public func solution(_ A: [Int]) -> Int {
+    var result = 0
+    for i in 0..<A.count {
+      result = result ^ A[i]
+    }
+    return result
+  }
 ```
+
+##### Following logic works perfectly but has performance issues
+
+```swift
 public func solution(_ A: [Int]) -> Int {
   var A = A.sorted()
   var foundElement = false
