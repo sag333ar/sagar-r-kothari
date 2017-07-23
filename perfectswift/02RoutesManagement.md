@@ -1,6 +1,6 @@
 Read inline comments to understand.
 
-```
+```swift
 // 1. Import Perfect library, http & http-server.
 import PerfectLib
 import PerfectHTTP
