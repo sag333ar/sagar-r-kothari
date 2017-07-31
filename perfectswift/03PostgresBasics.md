@@ -57,7 +57,7 @@ createuser -D -P perfect
 To create database with above user, please run following command.
 
 ```
-create db -O perfect perfect_testing
+createdb -O perfect perfect_testing
 ```
 
 * `-O` perfect -> owner of the database = perfect.
