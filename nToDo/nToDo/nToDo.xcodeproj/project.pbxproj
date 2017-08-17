@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C977377AE8843FCE0695194 /* Pods_nToDo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 469685AF99C27BB4BB21DA99 /* Pods_nToDo.framework */; };
 		318F0CE21F4568E000E48E4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318F0CE11F4568E000E48E4B /* AppDelegate.swift */; };
 		318F0CE41F4568E000E48E4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318F0CE31F4568E000E48E4B /* ViewController.swift */; };
 		318F0CE71F4568E000E48E4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 318F0CE51F4568E000E48E4B /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B4E0D4D9ADF0D8C9649DAB6 /* Pods-nToDo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nToDo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nToDo/Pods-nToDo.debug.xcconfig"; sourceTree = "<group>"; };
 		318F0CDE1F4568E000E48E4B /* nToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		318F0CE11F4568E000E48E4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		318F0CE31F4568E000E48E4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,9 @@
 		318F0CE81F4568E000E48E4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		318F0CEB1F4568E000E48E4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		318F0CED1F4568E000E48E4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		318F0CF31F456C0F00E48E4B /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		469685AF99C27BB4BB21DA99 /* Pods_nToDo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nToDo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FDDA32CC89252573D78D8F7 /* Pods-nToDo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nToDo.release.xcconfig"; path = "Pods/Target Support Files/Pods-nToDo/Pods-nToDo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C977377AE8843FCE0695194 /* Pods_nToDo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +46,8 @@
 			children = (
 				318F0CE01F4568E000E48E4B /* nToDo */,
 				318F0CDF1F4568E000E48E4B /* Products */,
+				CFAECB0E84E01DF35AAEF080 /* Pods */,
+				733B3E037401EEBFF46D8CEA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +68,26 @@
 				318F0CE81F4568E000E48E4B /* Assets.xcassets */,
 				318F0CEA1F4568E000E48E4B /* LaunchScreen.storyboard */,
 				318F0CED1F4568E000E48E4B /* Info.plist */,
+				318F0CF31F456C0F00E48E4B /* GoogleService-Info.plist */,
 			);
 			path = nToDo;
+			sourceTree = "<group>";
+		};
+		733B3E037401EEBFF46D8CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				469685AF99C27BB4BB21DA99 /* Pods_nToDo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CFAECB0E84E01DF35AAEF080 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2B4E0D4D9ADF0D8C9649DAB6 /* Pods-nToDo.debug.xcconfig */,
+				5FDDA32CC89252573D78D8F7 /* Pods-nToDo.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +97,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 318F0CF01F4568E000E48E4B /* Build configuration list for PBXNativeTarget "nToDo" */;
 			buildPhases = (
+				3E3E2D53D961DC3E099FD78F /* [CP] Check Pods Manifest.lock */,
 				318F0CDA1F4568E000E48E4B /* Sources */,
 				318F0CDB1F4568E000E48E4B /* Frameworks */,
 				318F0CDC1F4568E000E48E4B /* Resources */,
+				7DB88CE83E1E14A9A1E64F70 /* [CP] Embed Pods Frameworks */,
+				0F585F819F068F1ED07B67C6 /* [CP] Copy Pods Resources */,
+				318F0CF51F45A52900E48E4B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -96,6 +126,12 @@
 				TargetAttributes = {
 					318F0CDD1F4568E000E48E4B = {
 						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -129,6 +165,67 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F585F819F068F1ED07B67C6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-nToDo/Pods-nToDo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		318F0CF51F45A52900E48E4B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 63803c6f3bf4f797d2399001b4bc538964c4635d 4726fd7caeb2394665bef86a51a7a2f9513ac23f4d26a61da3cd694a52be2fb6";
+		};
+		3E3E2D53D961DC3E099FD78F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7DB88CE83E1E14A9A1E64F70 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-nToDo/Pods-nToDo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		318F0CDA1F4568E000E48E4B /* Sources */ = {
@@ -210,7 +307,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -261,7 +358,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -271,12 +368,17 @@
 		};
 		318F0CF11F4568E000E48E4B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B4E0D4D9ADF0D8C9649DAB6 /* Pods-nToDo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = PP4N6AXAF5;
 				INFOPLIST_FILE = nToDo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sagarrkothari.nToDo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "39ab6619-43e6-48ba-b052-3e846368c5e2";
+				PROVISIONING_PROFILE_SPECIFIER = "nToDo Dev Prov Prof";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,12 +386,17 @@
 		};
 		318F0CF21F4568E000E48E4B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FDDA32CC89252573D78D8F7 /* Pods-nToDo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = PP4N6AXAF5;
 				INFOPLIST_FILE = nToDo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sagarrkothari.nToDo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "39ab6619-43e6-48ba-b052-3e846368c5e2";
+				PROVISIONING_PROFILE_SPECIFIER = "nToDo Dev Prov Prof";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
