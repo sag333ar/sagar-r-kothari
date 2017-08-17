@@ -2,6 +2,20 @@
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
+# nToDo Related
+nToDo/nToDo/Pods/
+nToDo/nToDo/build/
+nToDo/nToDo/DerivedData/
+nToDo/nToDo/*.pbxuser
+nToDo/nToDo/!default.pbxuser
+nToDo/nToDo/*.mode1v3
+nToDo/nToDo/!default.mode1v3
+nToDo/nToDo/*.mode2v3
+nToDo/nToDo/!default.mode2v3
+nToDo/nToDo/*.perspectivev3
+nToDo/nToDo/!default.perspectivev3
+nToDo/nToDo/xcuserdata/
+
 ## Build generated
 build/
 DerivedData/
