@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B01B0851F89446700AA3041 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B32CD1A1F8941E400398AA0 /* ViewController.swift */; };
+		1B01B0861F89446900AA3041 /* ViewControllerTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B32CD1B1F8941E400398AA0 /* ViewControllerTableViewDelegate.swift */; };
+		1B32CD1F1F89422A00398AA0 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B32CD1E1F89422A00398AA0 /* ListViewController.swift */; };
+		1B32CD211F89426900398AA0 /* ListViewControllerTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B32CD201F89426900398AA0 /* ListViewControllerTableViewDelegate.swift */; };
 		318F0D211F45AB4500E48E4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318F0D201F45AB4500E48E4B /* AppDelegate.swift */; };
-		318F0D231F45AB4500E48E4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318F0D221F45AB4500E48E4B /* ViewController.swift */; };
 		318F0D261F45AB4500E48E4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 318F0D241F45AB4500E48E4B /* Main.storyboard */; };
 		318F0D291F45AB4500E48E4B /* nToDo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 318F0D271F45AB4500E48E4B /* nToDo.xcdatamodeld */; };
 		318F0D2B1F45AB4500E48E4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 318F0D2A1F45AB4500E48E4B /* Assets.xcassets */; };
@@ -36,10 +39,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B32CD1A1F8941E400398AA0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1B32CD1B1F8941E400398AA0 /* ViewControllerTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTableViewDelegate.swift; sourceTree = "<group>"; };
+		1B32CD1D1F8941E400398AA0 /* LeftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
+		1B32CD1E1F89422A00398AA0 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		1B32CD201F89426900398AA0 /* ListViewControllerTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewControllerTableViewDelegate.swift; sourceTree = "<group>"; };
 		202A8183E369EED03CF3A22B /* Pods-nToDo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nToDo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nToDo/Pods-nToDo.debug.xcconfig"; sourceTree = "<group>"; };
 		318F0D1D1F45AB4500E48E4B /* nToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		318F0D201F45AB4500E48E4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		318F0D221F45AB4500E48E4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		318F0D251F45AB4500E48E4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		318F0D281F45AB4500E48E4B /* nToDo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = nToDo.xcdatamodel; sourceTree = "<group>"; };
 		318F0D2A1F45AB4500E48E4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -81,6 +88,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B32CD161F8941E400398AA0 /* SidePanels */ = {
+			isa = PBXGroup;
+			children = (
+				1B32CD171F8941E400398AA0 /* Center */,
+				1B32CD1C1F8941E400398AA0 /* Left */,
+			);
+			path = SidePanels;
+			sourceTree = "<group>";
+		};
+		1B32CD171F8941E400398AA0 /* Center */ = {
+			isa = PBXGroup;
+			children = (
+				1B32CD181F8941E400398AA0 /* ViewController */,
+			);
+			path = Center;
+			sourceTree = "<group>";
+		};
+		1B32CD181F8941E400398AA0 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1B32CD1A1F8941E400398AA0 /* ViewController.swift */,
+				1B32CD1B1F8941E400398AA0 /* ViewControllerTableViewDelegate.swift */,
+				1B32CD191F8941E400398AA0 /* List */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		1B32CD191F8941E400398AA0 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				1B32CD1E1F89422A00398AA0 /* ListViewController.swift */,
+				1B32CD201F89426900398AA0 /* ListViewControllerTableViewDelegate.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		1B32CD1C1F8941E400398AA0 /* Left */ = {
+			isa = PBXGroup;
+			children = (
+				1B32CD1D1F8941E400398AA0 /* LeftViewController.swift */,
+			);
+			path = Left;
+			sourceTree = "<group>";
+		};
 		318F0D141F45AB4500E48E4B = {
 			isa = PBXGroup;
 			children = (
@@ -107,7 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				318F0D201F45AB4500E48E4B /* AppDelegate.swift */,
-				318F0D221F45AB4500E48E4B /* ViewController.swift */,
+				1B32CD161F8941E400398AA0 /* SidePanels */,
 				318F0D241F45AB4500E48E4B /* Main.storyboard */,
 				318F0D2A1F45AB4500E48E4B /* Assets.xcassets */,
 				318F0D2C1F45AB4500E48E4B /* LaunchScreen.storyboard */,
@@ -295,7 +346,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		318F0D511F45ABFC00E48E4B /* ShellScript */ = {
@@ -348,9 +399,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				318F0D231F45AB4500E48E4B /* ViewController.swift in Sources */,
+				1B01B0851F89446700AA3041 /* ViewController.swift in Sources */,
 				318F0D211F45AB4500E48E4B /* AppDelegate.swift in Sources */,
+				1B32CD211F89426900398AA0 /* ListViewControllerTableViewDelegate.swift in Sources */,
 				318F0D291F45AB4500E48E4B /* nToDo.xcdatamodeld in Sources */,
+				1B32CD1F1F89422A00398AA0 /* ListViewController.swift in Sources */,
+				1B01B0861F89446900AA3041 /* ViewControllerTableViewDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

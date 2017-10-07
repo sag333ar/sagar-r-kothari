@@ -8,6 +8,8 @@ target 'nToDo' do
 
   pod 'Fabric'
   pod 'Crashlytics'
+  pod 'JASidePanels'
+  pod 'SkyFloatingLabelTextField'
 
   # Pods for nToDo
 
