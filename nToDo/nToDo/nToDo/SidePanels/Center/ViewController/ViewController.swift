@@ -14,15 +14,13 @@ class ViewController: UIViewController {
   @IBOutlet weak var tableView: UITableView!
   @IBOutlet weak var textFieldAddTask: SkyFloatingLabelTextField!
   @IBOutlet weak var tableViewDelegate: ViewControllerTableViewDelegate!
+  var titleButton: UIButton?
 
   @IBOutlet weak var layoutConstraintListBottom: NSLayoutConstraint!
   override func viewDidLoad() {
     super.viewDidLoad()
-    // ↑ ↓
-    let tapG = UITapGestureRecognizer(target: self,
-                                      action: #selector(ViewController.navigationItemTapped))
-    self.navigationController?.navigationBar.addGestureRecognizer(tapG)
 //    storeData()
+    addTitleView()
   }
 
   override func viewDidAppear(_ animated: Bool) {
@@ -39,13 +37,13 @@ class ViewController: UIViewController {
   }
 
   func expandListView() {
-    title = "↑ Inbox"
+    titleButton?.setTitle("↑ Inbox", for: .normal)
     layoutConstraintListBottom.constant = 0
     animateListView()
   }
 
   func collapseListView() {
-    title = "↓ Inbox"
+    titleButton?.setTitle("↓ Inbox", for: .normal)
     layoutConstraintListBottom.constant =
       (tableView.frame.size.height + tableView.frame.origin.y) * -1
     animateListView()
@@ -58,6 +56,22 @@ class ViewController: UIViewController {
     }, completion: nil)
   }
 
+  func addTitleView() {
+    let rect = CGRect(x: 0, y: 0, width: 200, height: 40)
+    titleButton = UIButton(frame: rect)
+    titleButton?.setTitleColor(navigationController?.navigationBar.tintColor,
+                               for: .normal)
+    titleButton?.titleLabel?.font = UIFont.boldSystemFont(ofSize: 17)
+    titleButton?.backgroundColor = UIColor.clear
+    titleButton?.titleLabel?.adjustsFontSizeToFitWidth = true
+    titleButton?.titleLabel?.textAlignment = .center
+    // ↑ ↓
+    titleButton?.addTarget(self,
+                           action: #selector(ViewController.navigationItemTapped),
+                           for: .touchUpInside)
+    self.navigationItem.titleView = titleButton
+  }
+  
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
   }
