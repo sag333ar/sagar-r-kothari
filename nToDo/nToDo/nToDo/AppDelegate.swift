@@ -26,10 +26,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     Fabric.with([Crashlytics.self])
 
     let storyboard = UIStoryboard(name: "Main", bundle: nil)
-    let leftPanel = storyboard.instantiateViewController(withIdentifier: "LeftViewControllerID")
+//    let leftPanel = storyboard.instantiateViewController(withIdentifier: "LeftViewControllerID")
     let centerPanel = storyboard.instantiateViewController(withIdentifier: "NavigationControllerID")
     sidePanel = JASidePanelController()
-    sidePanel?.leftPanel = leftPanel
+//    sidePanel?.leftPanel = leftPanel
     sidePanel?.centerPanel = centerPanel
     window?.rootViewController = sidePanel
 

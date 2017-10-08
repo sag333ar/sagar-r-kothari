@@ -12,14 +12,31 @@ import SkyFloatingLabelTextField
 class ViewController: UIViewController {
 
   @IBOutlet weak var tableView: UITableView!
-  @IBOutlet weak var textFieldAddTask: SkyFloatingLabelTextField!
   @IBOutlet weak var tableViewDelegate: ViewControllerTableViewDelegate!
+  weak var listViewController: ListViewController!
   var titleButton: UIButton?
+  var isExpanded: Bool = false {
+    didSet {
+      updateTitle()
+    }
+  }
+  var titleForButton: String = "All Tasks" {
+    didSet {
+      updateTitle()
+    }
+  }
 
   @IBOutlet weak var layoutConstraintListBottom: NSLayoutConstraint!
   override func viewDidLoad() {
     super.viewDidLoad()
 //    storeData()
+//    let list1 = List(context: context)
+//    list1.title = "HomeToDos"
+//    let list2 = List(context: context)
+//    list2.title = "Viman Nagar"
+//    let list3 = List(context: context)
+//    list3.title = "Movies to watch"
+//    appDel.saveContext()
     addTitleView()
   }
 
@@ -37,15 +54,15 @@ class ViewController: UIViewController {
   }
 
   func expandListView() {
-    titleButton?.setTitle("↑ Inbox", for: .normal)
+    isExpanded = true
     layoutConstraintListBottom.constant = 0
     animateListView()
   }
 
   func collapseListView() {
-    titleButton?.setTitle("↓ Inbox", for: .normal)
+    isExpanded = false
     layoutConstraintListBottom.constant =
-      (tableView.frame.size.height + tableView.frame.origin.y) * -1
+      (tableView.frame.size.height + tableView.frame.origin.y + 44 ) * -1
     animateListView()
   }
 
@@ -65,15 +82,26 @@ class ViewController: UIViewController {
     titleButton?.backgroundColor = UIColor.clear
     titleButton?.titleLabel?.adjustsFontSizeToFitWidth = true
     titleButton?.titleLabel?.textAlignment = .center
-    // ↑ ↓
     titleButton?.addTarget(self,
                            action: #selector(ViewController.navigationItemTapped),
                            for: .touchUpInside)
     self.navigationItem.titleView = titleButton
   }
+
+  func updateTitle() {
+    let arrow = isExpanded ? "↑" : "↓"
+    titleButton?.setTitle("\(arrow) \(titleForButton)", for: .normal)
+  }
   
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
+  }
+
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if segue.identifier == "listview", let listview = segue.destination as? ListViewController {
+      listViewController = listview
+      listViewController.viewController = self
+    }
   }
 
 }
@@ -134,13 +162,6 @@ extension ViewController {
     task1.completed = false
     appDel.saveContext()
 
-  }
-}
-
-extension ViewController: UITextFieldDelegate {
-  func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
-    textField.resignFirstResponder()
-    return true
   }
 }
 

@@ -11,6 +11,8 @@ import UIKit
 class ListViewControllerTableViewDelegate: NSObject, UITableViewDataSource, UITableViewDelegate {
 
   var lists: [List] = []
+  var selectedList: List?
+  weak var listViewController: ListViewController?
 
   override init() {
     super.init()
@@ -30,21 +32,48 @@ class ListViewControllerTableViewDelegate: NSObject, UITableViewDataSource, UITa
   }
 
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return self.lists.count
+    return self.lists.count + 1
   }
 
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-    if let title = self.lists[indexPath.row].title {
-      cell.textLabel?.text = title
+    let label = cell.viewWithTag(1) as? UILabel
+    let checkmark = cell.viewWithTag(2) as? UIImageView
+    if indexPath.row == 0 {
+      label?.text = "All Tasks"
+      checkmark?.isHidden = selectedList != nil
     } else {
-      cell.textLabel?.text = ""
+      if let title = lists[indexPath.row-1].title {
+        label?.text = title
+      } else {
+        label?.text = ""
+      }
+      checkmark?.isHidden = selectedList != nil ? lists[indexPath.row-1] != selectedList : true
     }
     return cell
   }
 
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     tableView.deselectRow(at: indexPath, animated: true)
+    if indexPath.row == 0 {
+      selectedList = nil
+    } else {
+      selectedList = lists[indexPath.row-1]
+    }
+    
+    if let list = selectedList {
+      if let tasks = list.tasks?.allObjects as? [Task] {
+        listViewController?.viewController?.tableViewDelegate.tasks = tasks
+      } else {
+        listViewController?.viewController?.tableViewDelegate.tasks = []
+      }
+      listViewController?.viewController?.titleForButton = list.title!
+    } else {
+      listViewController?.viewController?.tableViewDelegate.loadData()
+      listViewController?.viewController?.titleForButton = "All Tasks"
+    }
+    listViewController?.viewController?.tableView.reloadData()
+    tableView.reloadData()
   }
 
 }

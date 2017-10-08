@@ -10,9 +10,6 @@ import UIKit
 
 class ViewControllerTableViewDelegate: NSObject, UITableViewDataSource, UITableViewDelegate {
 
-  var locations: [Location] = []
-  var tags: [Tag] = []
-  var lists: [List] = []
   var tasks: [Task] = []
 
   override init() {
@@ -21,21 +18,6 @@ class ViewControllerTableViewDelegate: NSObject, UITableViewDataSource, UITableV
   }
 
   func loadData() {
-    do {
-      locations = try context.fetch(Location.fetchRequest())
-    } catch {
-      locations = []
-    }
-    do {
-      lists = try context.fetch(List.fetchRequest())
-    } catch {
-      lists = []
-    }
-    do {
-      tags = try context.fetch(Tag.fetchRequest())
-    } catch {
-      tags = []
-    }
     do {
       tasks = try context.fetch(Task.fetchRequest())
     } catch {

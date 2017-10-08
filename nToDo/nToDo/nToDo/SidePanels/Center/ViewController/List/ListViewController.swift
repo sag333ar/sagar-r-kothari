@@ -12,9 +12,11 @@ class ListViewController: UIViewController {
 
   @IBOutlet weak var tableView: UITableView!
   @IBOutlet weak var tableViewDelegate: ListViewControllerTableViewDelegate!
+  weak var viewController: ViewController?
 
   override func viewDidLoad() {
     super.viewDidLoad()
+    tableViewDelegate.listViewController = self
   }
 
   override func didReceiveMemoryWarning() {
