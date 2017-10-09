@@ -77,3 +77,8 @@ class ListViewControllerTableViewDelegate: NSObject, UITableViewDataSource, UITa
   }
 
 }
+
+extension ListViewControllerTableViewDelegate {
+
+}
+

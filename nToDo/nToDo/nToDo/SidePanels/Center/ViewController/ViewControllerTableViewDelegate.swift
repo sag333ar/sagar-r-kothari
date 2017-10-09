@@ -30,28 +30,34 @@ class ViewControllerTableViewDelegate: NSObject, UITableViewDataSource, UITableV
   }
 
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return self.tasks.count
+    return tasks.count
   }
 
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-    if let title = self.tasks[indexPath.row].title {
-      cell.textLabel?.text = title
+    let label = cell.viewWithTag(1) as? UILabel
+    if let title = tasks[indexPath.row].title {
+      label?.text = title
     } else {
-      cell.textLabel?.text = ""
+      label?.text = ""
     }
-    if let date = self.tasks[indexPath.row].due {
-      let df = DateFormatter()
-      df.dateFormat = "dd-MMM-yyyy"
-      cell.detailTextLabel?.text = "Due on \(df.string(from: date))"
-    } else {
-      cell.detailTextLabel?.text = ""
-    }
+//    if let date = tasks[indexPath.row].due {
+//      let df = DateFormatter()
+//      df.dateFormat = "dd-MMM-yyyy"
+//      cell.detailTextLabel?.text = "Due on \(df.string(from: date))"
+//    } else {
+//      cell.detailTextLabel?.text = ""
+//    }
     return cell
   }
 
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     tableView.deselectRow(at: indexPath, animated: true)
   }
+
+}
+
+extension ViewControllerTableViewDelegate {
+
 
 }

@@ -8,16 +8,17 @@
 
 import UIKit
 
-class LeftViewController: UITableViewController {
+class LeftViewController: UIViewController {
 
+  @IBOutlet weak var tableView: UITableView!
+  @IBOutlet weak var tableViewDelegate: LeftViewControllerTableViewDelegate!
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view.
   }
 
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
   }
 
 }

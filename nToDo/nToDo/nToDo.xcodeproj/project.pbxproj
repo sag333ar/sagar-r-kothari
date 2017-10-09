@@ -11,6 +11,9 @@
 		1B01B0861F89446900AA3041 /* ViewControllerTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B32CD1B1F8941E400398AA0 /* ViewControllerTableViewDelegate.swift */; };
 		1B32CD1F1F89422A00398AA0 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B32CD1E1F89422A00398AA0 /* ListViewController.swift */; };
 		1B32CD211F89426900398AA0 /* ListViewControllerTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B32CD201F89426900398AA0 /* ListViewControllerTableViewDelegate.swift */; };
+		1B8A9C281F8BCE8700B2EF59 /* LeftViewControllerTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8A9C271F8BCE8700B2EF59 /* LeftViewControllerTableViewDelegate.swift */; };
+		1B8A9C291F8BDA7200B2EF59 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B32CD1D1F8941E400398AA0 /* LeftViewController.swift */; };
+		1B8A9C2B1F8BEF5800B2EF59 /* ViewControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8A9C2A1F8BEF5800B2EF59 /* ViewControllerCell.swift */; };
 		318F0D211F45AB4500E48E4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318F0D201F45AB4500E48E4B /* AppDelegate.swift */; };
 		318F0D261F45AB4500E48E4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 318F0D241F45AB4500E48E4B /* Main.storyboard */; };
 		318F0D291F45AB4500E48E4B /* nToDo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 318F0D271F45AB4500E48E4B /* nToDo.xcdatamodeld */; };
@@ -44,6 +47,8 @@
 		1B32CD1D1F8941E400398AA0 /* LeftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
 		1B32CD1E1F89422A00398AA0 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		1B32CD201F89426900398AA0 /* ListViewControllerTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewControllerTableViewDelegate.swift; sourceTree = "<group>"; };
+		1B8A9C271F8BCE8700B2EF59 /* LeftViewControllerTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftViewControllerTableViewDelegate.swift; sourceTree = "<group>"; };
+		1B8A9C2A1F8BEF5800B2EF59 /* ViewControllerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerCell.swift; sourceTree = "<group>"; };
 		202A8183E369EED03CF3A22B /* Pods-nToDo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nToDo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nToDo/Pods-nToDo.debug.xcconfig"; sourceTree = "<group>"; };
 		318F0D1D1F45AB4500E48E4B /* nToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		318F0D201F45AB4500E48E4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +116,7 @@
 				1B32CD1A1F8941E400398AA0 /* ViewController.swift */,
 				1B32CD1B1F8941E400398AA0 /* ViewControllerTableViewDelegate.swift */,
 				1B32CD191F8941E400398AA0 /* List */,
+				1B8A9C2A1F8BEF5800B2EF59 /* ViewControllerCell.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -128,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				1B32CD1D1F8941E400398AA0 /* LeftViewController.swift */,
+				1B8A9C271F8BCE8700B2EF59 /* LeftViewControllerTableViewDelegate.swift */,
 			);
 			path = Left;
 			sourceTree = "<group>";
@@ -402,7 +409,10 @@
 				1B01B0851F89446700AA3041 /* ViewController.swift in Sources */,
 				318F0D211F45AB4500E48E4B /* AppDelegate.swift in Sources */,
 				1B32CD211F89426900398AA0 /* ListViewControllerTableViewDelegate.swift in Sources */,
+				1B8A9C2B1F8BEF5800B2EF59 /* ViewControllerCell.swift in Sources */,
 				318F0D291F45AB4500E48E4B /* nToDo.xcdatamodeld in Sources */,
+				1B8A9C281F8BCE8700B2EF59 /* LeftViewControllerTableViewDelegate.swift in Sources */,
+				1B8A9C291F8BDA7200B2EF59 /* LeftViewController.swift in Sources */,
 				1B32CD1F1F89422A00398AA0 /* ListViewController.swift in Sources */,
 				1B01B0861F89446900AA3041 /* ViewControllerTableViewDelegate.swift in Sources */,
 			);

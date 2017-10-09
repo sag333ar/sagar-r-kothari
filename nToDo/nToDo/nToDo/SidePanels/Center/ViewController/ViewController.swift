@@ -7,12 +7,12 @@
 //
 
 import UIKit
-import SkyFloatingLabelTextField
 
 class ViewController: UIViewController {
 
   @IBOutlet weak var tableView: UITableView!
   @IBOutlet weak var tableViewDelegate: ViewControllerTableViewDelegate!
+  @IBOutlet weak var searchBar: UISearchBar!
   weak var listViewController: ListViewController!
   var titleButton: UIButton?
   var isExpanded: Bool = false {
@@ -62,7 +62,7 @@ class ViewController: UIViewController {
   func collapseListView() {
     isExpanded = false
     layoutConstraintListBottom.constant =
-      (tableView.frame.size.height + tableView.frame.origin.y + 44 ) * -1
+      (tableView.frame.size.height + tableView.frame.origin.y ) * -1
     animateListView()
   }
 
